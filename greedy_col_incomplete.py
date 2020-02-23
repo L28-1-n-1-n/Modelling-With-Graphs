@@ -7,7 +7,7 @@ import graph4
 import graph5
 
 
-def find_smallest_colour(G,i, colour_map):
+def find_smallest_colour(G,i):
     n = len(G.nodes())
     neighbour_colours = set(colour_map.get(neighbour) for neighbour in G[i])
     return (next(colour for colour in range(n) if colour not in neighbour_colours))
@@ -17,13 +17,18 @@ def find_smallest_colour(G,i, colour_map):
 def greedy(G):
     global kmax
 
+    global colour_map
+
     colour_map ={}
-
-
     for node in G.nodes():
         # neighbour_colours = set(colour_map.get(neighbour) for neighbour in G[node])
         # colour_map[node] = next(colour for colour in range(len(G)) if colour not in neighbour_colours)
-        colour_map[node] = find_smallest_colour(G, node, colour_map)
+        colour_map[node] = find_smallest_colour(G, node)
+
+    out_map = []
+    for node in G.nodes():
+        G.nodes[node]['colour'] = colour_map[node]
+        out_map.append(colour_map[node])
 
     print()
     for i in G.nodes():
@@ -35,10 +40,6 @@ def greedy(G):
     print('The number of colours that Greedy computed is:', kmax)
 
     # for debugging: show colour of each node
-    out_map = []
-    for node in G.nodes():
-        G.nodes[node]['colour'] = colour_map[node]
-        out_map.append(colour_map[node])
 
     print(colour_map)
     print (nx.info(G))
