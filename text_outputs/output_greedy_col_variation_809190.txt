@@ -1,0 +1,83 @@
+Graph G1:
+
+vertex 1 : colour 0
+vertex 2 : colour 1
+vertex 3 : colour 0
+vertex 4 : colour 1
+vertex 5 : colour 1
+vertex 6 : colour 2
+vertex 7 : colour 2
+vertex 8 : colour 3
+vertex 9 : colour 3
+vertex 10 : colour 4
+vertex 11 : colour 4
+vertex 12 : colour 5
+vertex 13 : colour 5
+
+The number of colours that Greedy computed is: 6
+
+Graph G2:
+
+vertex 1 : colour 0
+vertex 2 : colour 1
+vertex 3 : colour 2
+vertex 4 : colour 0
+vertex 5 : colour 1
+vertex 6 : colour 2
+vertex 7 : colour 0
+
+The number of colours that Greedy computed is: 3
+
+Graph G3:
+
+vertex 1 : colour 0
+vertex 2 : colour 1
+vertex 3 : colour 1
+vertex 4 : colour 2
+vertex 5 : colour 2
+vertex 6 : colour 3
+vertex 7 : colour 3
+vertex 8 : colour 4
+vertex 9 : colour 4
+vertex 10 : colour 5
+vertex 11 : colour 5
+vertex 12 : colour 6
+vertex 13 : colour 6
+
+The number of colours that Greedy computed is: 7
+
+Graph G4:
+
+vertex 1 : colour 0
+vertex 2 : colour 1
+vertex 3 : colour 0
+vertex 4 : colour 1
+vertex 5 : colour 0
+vertex 6 : colour 1
+vertex 7 : colour 0
+vertex 8 : colour 1
+vertex 9 : colour 0
+vertex 10 : colour 1
+vertex 11 : colour 0
+vertex 12 : colour 1
+
+The number of colours that Greedy computed is: 2
+
+Graph G5:
+
+vertex 1 : colour 0
+vertex 2 : colour 1
+vertex 3 : colour 0
+vertex 4 : colour 0
+vertex 5 : colour 0
+vertex 6 : colour 0
+vertex 7 : colour 1
+vertex 8 : colour 2
+vertex 9 : colour 2
+vertex 10 : colour 2
+vertex 11 : colour 2
+vertex 12 : colour 2
+vertex 13 : colour 3
+
+The number of colours that Greedy computed is: 4
+
